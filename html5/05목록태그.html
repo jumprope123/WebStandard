@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>목록태그</title>
+</head>
+<body>
+
+
+<h1>목록태그</h1>
+<h2>순서 없는 목록</h2>
+<h4>내가 좋아하는 음식</h4>
+<ul>
+    <li>스시</li>
+    <li>라면</li>
+    <li>순대국</li>
+    <li>피자</li>
+    <li>햄버거세트</li>
+</ul>
+
+<ul type="square">
+    <li>스시</li>
+    <li>라면</li>
+    <li>순대국</li>
+    <li>피자</li>
+    <li>햄버거세트</li>
+</ul>
+
+<ul>
+    <li>분식
+        <ul>
+            <li>김밥</li>
+            <li>순대</li>
+            <li>또뽀끼</li>
+            <li>라면
+                <ul>
+                    <li>삼양라면</li>
+                    <li>진라면매운맛</li>
+                    <li>진순이</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>순대국</li>
+    <li>피자</li>
+    <li>햄버거세트</li>
+</ul>
+
+<h2>순서 있는 목록</h2>
+<h4>내가 좋아하는 음식</h4>
+<ol>
+    <li>스시</li>
+    <li>라면</li>
+    <li>순대국</li>
+    <li>피자</li>
+    <li>햄버거세트</li>
+</ol>
+
+<ol type="A">
+    <li>스시</li>
+    <li>라면</li>
+    <li>순대국</li>
+    <li>피자</li>
+    <li>햄버거세트</li>
+</ol>
+
+<ol type="i">
+    <li>스시</li>
+    <li>라면</li>
+    <li>순대국</li>
+    <li>피자</li>
+    <li>햄버거세트</li>
+</ol>
+
+<ol>
+    <li>분식
+        <ol type="A">
+            <li>김밥</li>
+            <li>순대</li>
+            <li>또뽀끼</li>
+            <li>라면
+                <ol type="I">
+                    <li>삼양라면</li>
+                    <li>진라면매운맛</li>
+                    <li>진순이</li>
+                </ol>
+            </li>
+        </ol>
+    </l>
+</li>
+    <li>순대국</li>
+    <li>피자</li>
+    <li>햄버거세트</li>
+</ol>
+<hr>
+
+<h2>정의 목록</h2>
+<dl>
+    <dt>WWW</dt>
+    <dd>WWW는 World Wide Web의 약자로 블라블라....</dd>
+    <dt>HTML</dt>
+    <dd>HTML은 Hyper Text MarkUp language의 약자로 블라블라....</dd>
+    <dt>CSS</dt>
+    <dd>CSS는 Cascade Style Sheet의 약자로 블라블라....</dd>
+</dl>
+
+</body>
+</html>
+
+<!--
+- 목록 list
+여러 요소들을 일렬로 나열한 목록이나 명단을 의미
+HTML에서는 ul, ol, dl 이라는 태그로 표현 가능
+
+순서없는 목록 (unordered list)
+순서없는 목록은 ul 태그로 시작하고, li태그로 목록의 요소를 표현함
+목록의 요소앞에는 marker라고 하는 특수한 기호가 같이 출력된다
+marker 유형은 disc, squre, circle 등이 있고,
+CSS를 사용하면 이미지를 marker로 사용할 수 있다.
+
+순서있는 목록 (ordered list)
+순서 있는 목록은 ol태그로 시작하고 li태그로 목록의 요소를 표현함
+목록의 요소앞에는 marker라고 하는 특수한 기호가 같이 출력된다
+marker 유형은 숫자,로마자, 알파벳 등이 있음
+
+정의 목록 (definition list)
+용어와 그 용어의 뜻을 나열할 때 사용함
+정의목록은 dl태그로, 용어는 dt태그로 용어뜻은 dd태그를 사용함
+-->
