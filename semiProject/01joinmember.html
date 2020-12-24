@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입폼</title>
+</head>
+<body>
+<table cellspacing="0">
+    <thead>
+    <tr><td colspan="2"><span style="color: red">*</span>표시 항목은 필수입력항목입니다.</td></tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td style="background: lightgray"><label for="userid">아 이 디</label></td>
+        <td><span style="color: red">*</span><input type="text" name="userid" id="userid" maxlength="12" minlength="4"><button type="button">ID 중복검사</button>
+        <p>아이디는 영문,숫자 조합으로 하셔야 합니다.[4자리이상 12자리이하]</p>
+            <span>아이디는 <span style="color: red">소문자로</span> 저장됩니다.</span></td>
+    </tr>
+    <tr>
+        <td style="background: lightgray"><label for="userpw">암&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;호</label></td>
+        <td><span style="color: red">*</span>
+            <input type="password" name="userpw" id="userpw" minlength="4" maxlength="12" required="required"><br>
+            <p>비밀번호는 4자리이상 12자리 이하로 입력해주세요.</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="background: lightgray"><label for="password1">암호확인</label></td>
+        <td>
+            <span style="color: red">*</span>
+            <input type="password" id="password1" minlength="4" maxlength="12" required="required">
+        </td></tr>
+    <tr>
+        <td style="background: lightgray"><label for="name">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름</label> </td>
+        <td>
+            <span style="color:red;">*</span>
+            <input type="text" id="name" name="name" required="required">
+        </td>
+    </tr>
+    <tr>
+        <td style="background: lightgray"><label for="nickname">대화명</label></td>
+        <td>&nbsp;&nbsp;<input type="text" name="nickname" id="nickname" maxlength="10"><button type="button">중복검사</button><br>
+        대화명을 지정하지 않으시면 회원님의 이름으로 대화명이 지정됩니다.<br>대화명은 한글, 영문 관계없이 10글자 이내로 하셔야 합니다.</td>
+    </tr>
+    <tr>
+        <td style="background: lightgray"><label for="jumin1">주민등록번호</label></td>
+        <td>
+            <span style="color: red">*</span>
+            <input type="text" maxlength="6" pattern="[0-9]{6}" name="jumin1" id="jumin1" required="required" size="6">
+            -
+            <input type="text" maxlength="7" pattern="[0-9]{7}" name="jumin2" required="required" size="7">
+        </td>
+    </tr>
+    <tr>
+        <td style="background: lightgray"><label for="birth1">생년월일</label></td>
+        <td>
+            <span style="color: red">*</span>
+            <input type="text" name="birth1" id="birth1" required="required" maxlength="4" size="4">년
+            <input type="text" name="birth2" required="required" maxlength="2" size="2">월
+            <input type="text" name="birth3" required="required" maxlength="2" size="2">일
+        </td>
+    </tr>
+    <tr>
+        <td style="background: lightgray"><label for="gender">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별</label></td>
+        <td>
+            <span style="color: red">*</span>
+            <input type="radio" name="gender" id="gender" value="male"> 남자
+            <input type="radio" name="gender" value="female"> 여자
+        </td>
+    </tr>
+    <tr>
+        <td style="background: lightgray"><label for="email">E-mail</label></td>
+        <td>
+            <span style="color: red">*</span>
+            <input type="email" required="required" name="email" id="email" size="30">
+        </td>
+    </tr>
+    <tr>
+        <td style="background: lightgray"><label for="getmail1">메일수신</label></td>
+        <td>
+            <span style="color: red">*</span>
+            <input type="radio" name="getmail" id="getmail1" value="yes" checked="checked">수신동의
+            <input type="radio" name="getmail" value="no">수신거부
+        </td>
+    </tr>
+    <tr>
+        <td style="background: lightgray"><label for="zip1">우편번호</label></td>
+        <td>
+            <span style="color: red">*</span>
+            <input type="text" name="zip1" id="zip1" maxlength="3" size="3" required="required">
+            -
+            <input type="text" name="zip2" maxlength="3" size="3" required="required">
+            <button type="button">검색</button>
+        </td>
+    </tr>
+    <tr>>
+        <td style="background: lightgray" label for="addr1">주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</lable></td>
+        <td>
+            <span style="color: red">*</span>
+            <input type="text" name="addr1" id="addr1" size="30" required="required"><br>
+            &nbsp;&nbsp;<input type="text" name="addr2" size="20" required="required">
+        </td>
+    </tr>
+    <tr>
+        <td style="background: lightgray"><label for="hp1">전화번호</label></td>
+        <td>
+            <span style="color: red">*</span>
+            <select required="required" name="hp1" id="hp1">
+                <option selected="selected" value="02">02</option>
+                <option value="032">032</option>
+                <option value="051">051</option>
+            </select>
+            -
+            <input type="text" name="hp2" size="4" required="required">
+            -
+            <input type="text" name="hp3" size="4" required="required">
+        </td>
+    </tr>
+    <tr>
+        <td style="background: lightgray"><label for="phone1">핸 드 폰</label></td>
+        <td>
+            <span style="color: red">*</span>
+            <select required="required" id="phone1" name="phon1">
+                <option value="010">010</option>
+                <option value="011">011</option>
+                <option value="019">019</option>
+            </select>
+            -
+            <input type="text" name="phone2" size="4" required="required">
+            -
+            <input type="text" name="phone3" size="4" required="required">
+        </td>
+    </tr>
+    <tr>
+        <td style="background: lightgray"><label for="job">직&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;업</label></td>
+        <td>&nbsp;
+            <select name="job" required="required">
+                <option selected="selected" id="job">선택하세요</option>
+                <option value="student">학생</option>
+                <option value="worker">직장인</option>
+                <option value="programer">개발자</option>
+                <option value="manager">관리자</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td style="background: lightgray"><label for="hobby">취미</label></td>
+        <td>
+            <span style="color: red">*</span>
+            <input type="checkbox" id="hobby" name="hobby" value="sports">스포츠
+            <input type="checkbox" name="hobby" value="shopping">쇼핑
+            <input type="checkbox" name="hobby" value="internet">인터넷
+            <input type="checkbox" name="hobby" value="trip">여행
+            <input type="checkbox" name="hobby" value="book">독서
+            <input type="checkbox" name="hobby" value="movie">영화감상
+            <input type="checkbox" name="hobby" value="music">음악감상
+            <input type="checkbox" name="hobby" value="mint">민트초코
+        </td>
+    </tr>
+    <tr>
+        <td style="background: lightgray"><label for="intro">자기소개</label></td>
+        <td>
+            &nbsp;&nbsp;
+            <textarea id="intro" name="intro" rows="5" cols="75"></textarea>
+        </td>
+    </tr>
+<foot>
+   <tr><td colspan="2" align="center">
+       <button type="submit">등록</button>
+       <button type="reset">취소</button>
+   </td></tr>
+</foot>
+
+    </tbody>
+</table>
+</body>
+</html>
